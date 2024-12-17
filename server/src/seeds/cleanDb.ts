@@ -16,7 +16,8 @@ export default async (modelName: "Question", collectionName: string) => {
     }).toArray();
 
     if (modelExists.length) {
-      await db.dropCollection(collectionName);
+      const connection = await db;
+      await connection.dropCollection(collectionName);
       console.log(`Collection ${collectionName} dropped successfully`);
     } else {
       console.log(`Collection ${collectionName} does not exist`);
