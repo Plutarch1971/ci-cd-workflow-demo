@@ -14,6 +14,10 @@ app.use(express.static('../client/dist'));
 
 app.use(routes);
 
-db.once('open', () => {
-  app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+db.then(connection => {
+  connection.once('open', () => {
+    app.listen(PORT, () => console.log(`🌍 Now listening on localhost:${PORT}`));
+  });
+}).catch(err => {
+  console.error('Database connection error:', err);
 });
