@@ -115,4 +115,4 @@ Refer to the following resources:
 * See [ESLint](https://eslint.org/) or [Biome](https://biomejs.dev/) for examples.
 
 ---
-© 2024 edX Boot Camps LLC. Confidential and Proprietary. All Rights Reserved.
+
