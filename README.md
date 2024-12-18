@@ -42,4 +42,8 @@ Deployed on Render: https://ci-cd-workflow-demo.onrender.com
 ## Repository
 https://github.com/Plutarch1971/ci-cd-workflow-demo.git
 
+## Contact
+Email: matthewpmendez@gmail.con
+Github Repo: https://github.com/Plutarch1971
+
 
