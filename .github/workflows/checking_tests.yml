@@ -19,14 +19,15 @@ jobs:
         with:
           node-version: 21.x
 
-      # - name: Install dependencies
-      #   run: npm install
+      - name: Install dependencies
+        run: npm install
       
-      # - name: Build App
-      #   run: npm run build
+      - name: Build App
+        run: npm run build
 
-      # - name: Run vitest tests
-      #   run: npm run test
+      - name: Run vitest tests
+        run: npm run test
+        
       - name: Run componest test
         run: test-component
 
