@@ -21,12 +21,15 @@ jobs:
       - name: Install dependencies
         run: npm install
       
+      - name: Install Cypress
+        run: npx cypress install
+
       - name: Build App
         run: npm run build
 
       - name: Run vitest tests
         run: npm run test
 
-      - name: Run componest test
-        run: test-component
+      - name: Run component test
+        run: npm run test-component
 
